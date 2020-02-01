@@ -36,7 +36,7 @@ for i in range(len(language)):
                     verses_of_nt_prep = verses_of_nt[:-15] # a little preprocessing step
                     #book_of_nt.append(verses_of_nt_prep)
 
-                    with open("DATA/"+language[i][-6:-3]+'.txt', 'a') as file: #specified the name of the file
+                    with open( language[i][-6:-3]+".txt", 'a') as file: #specified the name of the file
                         for line in verses_of_nt_prep:
                             file.write(line)
                             file.write('\n')
