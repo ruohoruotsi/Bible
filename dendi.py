@@ -45,7 +45,7 @@ for i in range(len(language)):
 
                     with open("DATA/"+language[i][-6:-3]+'.txt', 'a') as file: # specified the name of the file
                         for verse_no, line in enumerate(iterable=verses_of_nt_prep, start=1):
-                            file.write("( "+book[j]+" "+str(k)+":" +str(verse_no)+" ) ")
+                            file.write("( "+book[j]+" "+str(k)+":" +str(verse_no)+" ), ")
                             if line !="-":
                                 file.write(line)
                                 lines.append(line) # for further preprocessing steps
@@ -96,6 +96,7 @@ bible_bi_preproc[['DDN']].to_csv('DATA/dataDDN.txt', index=False)
 - (Corinthians 2:13-14) same remark like above
 - (John 3:14-15) ddn version has less verse than en version
 - (Revelation 12&13:1&2) verse overlap between chapters
+#Do not forget to add quotation mark ""
 
 # Is the data aligned now ?
 pd.read_csv('DATA/dataDDN.txt').shape,pd.read_csv('DATA/dataEN.txt').shape
