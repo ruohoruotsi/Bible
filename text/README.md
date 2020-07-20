@@ -1,1 +1,1 @@
-Python script to scrape text from [Bible.is](http://www.bible.is/)
+Python script and notebook to scrape text from [Bible.is](http://www.bible.is/)
