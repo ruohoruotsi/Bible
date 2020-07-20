@@ -1,1 +1,2 @@
-Notebook to scrape audio from [Bilbe.is](Bible.is)
+Notebook to scrape audio from [Bilbe.is](http://www.bible.is/)
+
